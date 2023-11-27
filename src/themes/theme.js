@@ -1,16 +1,18 @@
+import {palettes} from "./palettes"
+
 export const components = {
   dark: {
-    colors: {
-      container: {
-        bg: "linear-gradient(to right top, #1e1f22, #1f2326, #212727, #252b28, #2c2e29)",
+    ui: {
+      wrapper: {
+        bg: palettes.color[1],
       },
     },
   },
 
   light: {
-    colors: {
-      container: {
-        bg: "#FFFFFF",
+    ui: {
+      wrapper: {
+        bg: "#ffff",
       },
     },
   },

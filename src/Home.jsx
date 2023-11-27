@@ -1,11 +1,15 @@
-import { GlobalStyles } from "./GlobalStyles";
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import { useTheme } from './themes/ThemeProvider.jsx'; 
+import { GlobalStyles } from './GlobalStyles';
+import { components } from './themes/theme.js'; 
 
 const Home = () => {
+  const { theme } = useTheme();
+
   return (
-    <>
-      <GlobalStyles />
-      <h1>proLitres</h1>
-    </>
+      <StyledThemeProvider theme={components[theme]}>
+        <GlobalStyles />
+      </StyledThemeProvider>
   );
 };
 

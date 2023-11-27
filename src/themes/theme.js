@@ -12,7 +12,7 @@ export const components = {
   light: {
     ui: {
       wrapper: {
-        bg: "#ffff",
+        bg: palettes.color[3]
       },
     },
   },

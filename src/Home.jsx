@@ -1,6 +1,5 @@
-import styled, {
-  ThemeProvider as StyledThemeProvider,
-  css
+import {
+  ThemeProvider as StyledThemeProvider
 } from "styled-components";
 import { useTheme } from "./themes/ThemeProvider.jsx";
 import { GlobalStyles } from "./GlobalStyles";
@@ -9,7 +8,7 @@ import { components } from "./themes/theme.js";
 
 
 const Home = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <StyledThemeProvider theme={components[theme]}>

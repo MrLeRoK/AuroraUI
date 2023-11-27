@@ -1,8 +1,63 @@
-# React + Vite
+ # HDok - Онлайн Кинотеатр
+ 
+ ![DALL·E 2023-11-27 18.55.04 - A visually striking and modern logo for an online cinema application named 'HDok'. The logo should showcase the name 'HDok' in a bold, contemporary fo.png](..%2F..%2FDownloads%2FDALL%C2%B7E%202023-11-27%2018.55.04%20-%20A%20visually%20striking%20and%20modern%20logo%20for%20an%20online%20cinema%20application%20named%20%27HDok%27.%20The%20logo%20should%20showcase%20the%20name%20%27HDok%27%20in%20a%20bold%2C%20contemporary%20fo.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+HDok - это современное онлайн-приложение для кинотеатра, предлагающее широкий выбор фильмов и сериалов для просмотра. Приложение обеспечивает удобный пользовательский интерфейс, позволяющий легко навигировать по каталогу и наслаждаться качественным контентом.
+
+## Технологии
+
+Приложение разработано с использованием следующих технологий:
+
+- React (версия 18.2.0)
+- Styled Components (версия 6.1.1)
+- Vite (версия 4.4.5)
+- ESLint и Prettier для обеспечения качества кода
+
+## Установка
+
+Для установки и запуска приложения выполните следующие шаги:
+
+1. Клонируйте репозиторий:
+
+   ```
+   git clone [URL вашего репозитория]
+   ```
+
+2. Перейдите в каталог проекта:
+
+   ```
+   cd proLitres
+   ```
+
+3. Установите зависимости:
+
+   ```
+   npm install
+   ```
+
+4. Запустите приложение в режиме разработки:
+
+   ```
+   npm run dev
+   ```
+
+   Приложение будет доступно по адресу `http://localhost:3000`.
+
+## Скрипты
+
+- `npm run dev` - запуск сервера разработки
+- `npm run build` - сборка проекта для продакшена
+- `npm run lint` - запуск ESLint для проверки качества кода
+- `npm run format` - автоматическое форматирование кода с помощью Prettier
+- `npm run preview` - предпросмотр собранного приложения
+
+## Лицензия
+
+[Укажите информацию о лицензии, если она применима.]
+
+## Авторы и Благодарности
+
+[Перечислите авторов и контрибьюторов проекта.]

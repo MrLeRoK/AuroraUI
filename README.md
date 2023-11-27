@@ -1,7 +1,5 @@
  # HDok - Онлайн Кинотеатр
- 
- ![DALL·E 2023-11-27 18.55.04 - A visually striking and modern logo for an online cinema application named 'HDok'. The logo should showcase the name 'HDok' in a bold, contemporary fo.png](..%2F..%2FDownloads%2FDALL%C2%B7E%202023-11-27%2018.55.04%20-%20A%20visually%20striking%20and%20modern%20logo%20for%20an%20online%20cinema%20application%20named%20%27HDok%27.%20The%20logo%20should%20showcase%20the%20name%20%27HDok%27%20in%20a%20bold%2C%20contemporary%20fo.png)
-
+ ![Логотип HDok](assets/hdok.png)
 
 ## Описание
 
@@ -23,7 +21,7 @@ HDok - это современное онлайн-приложение для к
 1. Клонируйте репозиторий:
 
    ```
-   git clone [https://github.com/Ihopeforyou/HDok.git]
+   git clone https://github.com/Ihopeforyou/HDok.git
    ```
 
 2. Перейдите в каталог проекта:

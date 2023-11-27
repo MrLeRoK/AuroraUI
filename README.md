@@ -1,5 +1,5 @@
  # HDok - Онлайн Кинотеатр
- ![Логотип HDok](./assets/hdok.png)
+ ![Логотип HDok](https://github.com/Ihopeforyou/HDok/blob/main/src/assets/hdok.png)
 
 ## Описание
 

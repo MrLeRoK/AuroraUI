@@ -1,42 +1,56 @@
-import React, { forwardRef } from 'react';
-import styled, {css} from "styled-components";
+import React, { forwardRef } from "react";
+import styled, { css } from "styled-components";
+import { StyleSheetManager } from "styled-components";
+import isPropValid from "@emotion/is-prop-valid";
 
-const formatCssSizeValue = value => {
-    if (typeof value === 'number') {
-        return `${value}px`;
-    }
-    return value;
+const formatCssSizeValue = (value) => {
+  if (typeof value === "number") {
+    return `${value}px`;
+  }
+  return value;
 };
 
-const BoxWrapper = styled.div(({theme, width, height, boxShadow}) => {
+const BoxWrapper = styled.div(({ theme, width, height, boxshadow, bgColor}) => {
 
-   return css`
-        background: ${theme.ui.wrapper.bg};
-        width: ${formatCssSizeValue(width)};
-        height: ${formatCssSizeValue(height)};
+  return css`
+    position: relative;
+    background: ${bgColor};
+    width: ${formatCssSizeValue(width)};
+    height: ${formatCssSizeValue(height)};
+    
 
-        ${boxShadow && theme.ui.shadows[boxShadow]
-           ? `box-shadow: ${theme.ui.shadows[boxShadow]};`
-           : 'box-shadow: none;'
-    }
-`})
+    ${boxshadow && theme.ui.shadows[boxshadow]
+      ? `box-shadow: ${theme.ui.shadows[boxshadow]};`
+      : "box-shadow: none;"}
+  `;
+});
 
-const Box = forwardRef(({ width, height, children, as, boxShadow, ...BoxProps }, ref) => {
-    const validElements = ['div', 'section', 'aside'];
-    const wrapper = as && validElements.includes(as) ? as : 'div';
+const Box = forwardRef(
+  ({ className, width, height, children, as, boxshadow, bgColor, ...BoxProps }, ref) => {
+    const validElements = ["div", "section", "aside"];
+    const wrapper = as && validElements.includes(as) ? as : "div";
 
     return (
-    <BoxWrapper 
-        ref={ref} 
-        width={width} 
-        height={height}
-        boxShadow={boxShadow}
-        as={wrapper}
-        {...BoxProps}
-    >
-        {children}
-    </BoxWrapper>
-    )
-})
+      <StyleSheetManager
+        shouldForwardProp={(propName) =>
+          isPropValid(propName) && propName !== "boxshadow"
+        }
+      >
+        <BoxWrapper
+          ref={ref}
+          bgColor={bgColor}
+          className={className}
+          width={width}
+          height={height}
+          boxshadow={boxshadow}
+          as={wrapper}
+          {...BoxProps}
+        >
+          {children}
+        </BoxWrapper>
+      </StyleSheetManager>
+    );
+  },
+);
 
-export {Box}
+export { Box };

@@ -1,5 +1,4 @@
  # Aurora UI
- ![Логотип HDok](https://github.com/Ihopeforyou/HDok/blob/main/src/assets/hdok.png)
 
 ## Описание
 
@@ -21,7 +20,7 @@ Aurora UI - дизайн система
 1. Клонируйте репозиторий:
 
    ```
-   git clone https://github.com/Ihopeforyou/HDok.git
+   git clone https://github.com/Ihopeforyou/AuroraUI.git
    ```
 
 2. Перейдите в каталог проекта:

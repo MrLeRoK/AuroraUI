@@ -1,32 +1,10 @@
 import React, { forwardRef } from "react";
-import styled, { css } from "styled-components";
 import { StyleSheetManager } from "styled-components";
 import isPropValid from "@emotion/is-prop-valid";
-
-const formatCssSizeValue = (value) => {
-  if (typeof value === "number") {
-    return `${value}px`;
-  }
-  return value;
-};
-
-const BoxWrapper = styled.div(({ theme, width, height, boxshadow, bgColor}) => {
-
-  return css`
-    position: relative;
-    background: ${bgColor};
-    width: ${formatCssSizeValue(width)};
-    height: ${formatCssSizeValue(height)};
-    
-
-    ${boxshadow && theme.ui.shadows[boxshadow]
-      ? `box-shadow: ${theme.ui.shadows[boxshadow]};`
-      : "box-shadow: none;"}
-  `;
-});
+import { BoxWrapper } from "./Box.styles";
 
 const Box = forwardRef(
-  ({ className, width, height, children, as, boxshadow, bgColor, ...BoxProps }, ref) => {
+  ({ className, width, height, children, as, boxshadow, bgColor="#ffff", ...BoxProps }, ref) => {
     const validElements = ["div", "section", "aside"];
     const wrapper = as && validElements.includes(as) ? as : "div";
 

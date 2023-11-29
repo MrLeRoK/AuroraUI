@@ -16,7 +16,7 @@ const Home = () => {
         height={500}
         style={{ marginLeft: "150px", marginTop: "150px"}}
         className="box-class" // для дополнительный стилизации
-        boxshadow="shadow1"
+        boxshadow="shadow4"
       >
         <h1>sadas</h1>
       </Box>

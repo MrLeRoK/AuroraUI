@@ -1,4 +1,4 @@
- # Aurora UIы
+ # Aurora UI
 
 ## Описание
 
